@@ -11,8 +11,6 @@
 
     get-wmi-object = (classname, keys = {}, host, namespace, security = wmi-security!) ->
 
-      WScript.Echo 'antes', object-moniker classname, keys, host, namespace, security
-
       get-com-object "#{ object-moniker classname, keys, host, namespace, security }"
 
     {

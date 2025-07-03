@@ -14,8 +14,6 @@
 
     create-wmi-class-moniker = (classname, host = '.', namespace = wmi-namespaces.cim, security = wmi-security!) ->
 
-      WScript.Echo classname
-
       to-string = ->
 
         connection = build-path [ (as-unc @host), @namespace ]
